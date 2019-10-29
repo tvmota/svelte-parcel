@@ -1,17 +1,23 @@
 <script>
-  import Icon from './components/common/icon/Icon.svelte';
+  import { Router, Route, Link } from 'svero';
+  import AppHeader from './components/common/Header.svelte';
+  import AppFooter from './components/common/Footer.svelte';
+  import Home from './pages/Home.svelte';
+  import Detail from './pages/Detail.svelte';
 </script>
+
 <div class="grid-box">
-  <header class="grid-header" role="header">
-    <h1>Header</h1>    
-  </header>
+  <AppHeader />
   <main class="grid-main">
+    <Link href="/">home</Link>
+    <Link href="/detail">detail</Link>
     <div class="teste bg-black"></div>
-    <Icon iconName="pkmn"/>
+    <Router>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/detail" component={Detail} />
+    </Router>
   </main>
-  <footer class="grid-footer" role="content-info">
-    <h2>footer</h2>
-  </footer>
+  <AppFooter />
 </div>
 
 <style>
@@ -36,13 +42,5 @@
 
   .grid-main {
     grid-area: main;
-  }
-
-  .grid-header {
-    grid-area: header;  
-  }
-
-  .grid-footer {
-    grid-area: footer;
   }
 </style>

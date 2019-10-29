@@ -1,6 +1,5 @@
 <script>
-  import { beforeUpdate } from 'svelte';
-  import * as icons from '../../../assets/icons/*.svg';
+  import * as icons from '../../assets/icons/*.svg';
   export let iconName;
 </script>
 
