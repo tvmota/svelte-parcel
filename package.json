@@ -1,7 +1,7 @@
 {
   "name": "svelte-parcel",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto base para iniciar um projeto com svelte/parcel",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
@@ -13,7 +13,8 @@
     "last 1 firefox versions"
   ],
   "keywords": [],
-  "author": "",
+  "author": "Tiago Mota <tiago.vieira.mota@gmail.com>",
+  "repository": "https://github.com/tvmota/svelte-parcel",
   "license": "ISC",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
