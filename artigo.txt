@@ -1,0 +1,35 @@
+- BREVE APRESENTAÇÃO DA LIB(SVELTE)
+  Explicar o que é e faz a lib, estrutura de um componente e quem está utilizando altualmente
+    utilizar métricas sobre a lib(best of js, state of js 2018(menções), stackoverflow survey, jetbrains survey?)
+
+- O QUE VAMOS CONSTRUIR
+  explicação do que vai ser construido e o que será utilizado no desenvolvimento da aplicação e como será a estrtura da nnossa aplicação
+    - Processo de escolha das ferramentas utilizadas
+    Será uma aplicação SPA(Single Page App) com duas rotas: 
+      - Home(página inicial)
+      - Details(página de detalhes)
+
+- CONFIGURAÇÃO INICIAL
+  Explanção sobre os requisitos básicos e como configurar o ambiente de desenvolvimento
+
+- LAYOUT
+  Definir layout básico da aplicação, vou optar pelo uso do css grid layout, apesar de não ter a mesma abrangencia de suporte do flexbox, 
+  por outro lado traz mais simplicidade para construir o layout inicial. O layouta da aplicação será simples:
+    - Header
+    - body
+    - footer
+
+- APLICAÇÂO
+  Baseado nos requisitos da aplicação vamos definir quais componentes precisamos para construir a aplicação e explicação e desenvolvimento dos componentes
+    - autocomplete
+    - card
+    - img(wrapper)
+    - badge
+    - evolution list
+
+- FINALIZAÇÂO
+  Considerações finais e conclusão do artigo
+
+Referencias
+  - https://dev.to/muhajirdev/using-tailwindcss-with-sveltejs-2098
+  - 
