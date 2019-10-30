@@ -5,6 +5,7 @@
 - O QUE VAMOS CONSTRUIR
   explicação do que vai ser construido e o que será utilizado no desenvolvimento da aplicação e como será a estrtura da nnossa aplicação
     - Processo de escolha das ferramentas utilizadas
+    
     Será uma aplicação SPA(Single Page App) com duas rotas: 
       - Home(página inicial)
       - Details(página de detalhes)

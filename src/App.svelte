@@ -20,27 +20,33 @@
   <AppFooter />
 </div>
 
-<style>
+<style lang="scss">
+  @import "tailwindcss/base";
+  @import "tailwindcss/components";
+  @import "tailwindcss/utilities";
+
   h1 {
     color: purple;
   }
 
   .teste {
-    height: 40px;
+    height: 10px;
   }
 
-  .grid-box {
-    width: 100%;
-    margin: 0 auto;
-    min-height: 100vh;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
-  }
+  .grid {
+    &-box {
+      width: 100%;
+      margin: 0 auto;
+      min-height: 100vh;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: auto;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
 
-  .grid-main {
-    grid-area: main;
+    &-main {
+      grid-area: main;  
+    }
   }
 </style>
