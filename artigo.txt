@@ -3,8 +3,10 @@
     utilizar métricas sobre a lib(best of js, state of js 2018(menções), stackoverflow survey, jetbrains survey?)
 
 - O QUE VAMOS CONSTRUIR
-  explicação do que vai ser construido e o que será utilizado no desenvolvimento da aplicação e como será a estrtura da nnossa aplicação
-    - Processo de escolha das ferramentas utilizadas
+  explicação do que vai ser construido e o que será utilizado no desenvolvimento da aplicação e como será a estrtura da aplicação
+    Processo de escolha das ferramentas utilizadas
+      - pros e contras
+  Estrtura do projeto
     Será uma aplicação SPA(Single Page App) com duas rotas: 
       - Home(página inicial)
       - Details(página de detalhes)
@@ -31,5 +33,4 @@
   Considerações finais e conclusão do artigo
 
 Referencias
-  - https://dev.to/muhajirdev/using-tailwindcss-with-sveltejs-2098
   - 
