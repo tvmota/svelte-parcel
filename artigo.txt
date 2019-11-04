@@ -16,13 +16,16 @@
 
 - LAYOUT
   Definir layout básico da aplicação, vou optar pelo uso do css grid layout, apesar de não ter a mesma abrangencia de suporte do flexbox, 
-  por outro lado traz mais simplicidade para construir o layout inicial. O layouta da aplicação será simples:
+  por outro lado traz mais simplicidade para construir o layout inicial. O layout da aplicação será simples:
     - Header
     - body
     - footer
+  
 
 - APLICAÇÂO
   Baseado nos requisitos da aplicação vamos definir quais componentes precisamos para construir a aplicação e explicação e desenvolvimento dos componentes
+    - icon
+    - loader
     - autocomplete
     - card
     - img(wrapper)

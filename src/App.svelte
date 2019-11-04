@@ -2,22 +2,21 @@
   import { Router, Route, Link } from 'svero';
   import AppHeader from './components/common/Header.svelte';
   import AppFooter from './components/common/Footer.svelte';
+  // import Loader from './components/common/Loader.svelte';
   import Home from './pages/Home.svelte';
   import Detail from './pages/Detail.svelte';
 </script>
 
 <div class="grid-box">
-  <AppHeader />
-  <main class="grid-main">
-    <Link href="/">home</Link>
-    <Link href="/detail">detail</Link>
-    <div class="teste bg-black"></div>
+  <AppHeader bgColor="bg-red-600" headerTitle="SvelDex" txtColor="text-gray-100"/>
+  <main class="grid-main py-8 flex justify-center">
     <Router>
       <Route exact path="/" component={Home} />
       <Route exact path="/detail" component={Detail} />
     </Router>
   </main>
-  <AppFooter />
+  <AppFooter footerTitle="@Tiago Mota // SvelDex"/>
+  <!--Loader /-->
 </div>
 
 <style>
