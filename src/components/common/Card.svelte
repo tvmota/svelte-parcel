@@ -1,4 +1,5 @@
 <script>
+  import { Link } from 'svero';
   import Badge from './Badge.svelte';
   export let pkmnObj;
 </script>
@@ -13,7 +14,9 @@
   <div class="w-full pb-4 bg-red-300 border border-red-300">
     <div class="px-4 py-2">
       <div class="font-bold text-xl text-gray-900 capitalize">
-        {`#${pkmnObj.id} ${pkmnObj.name}`}
+        <Link href={`/detail/${pkmnObj.id}`} className="hover:underline text-red-800">
+          {`#${pkmnObj.id} ${pkmnObj.name}`}
+        </Link>
       </div>
     </div>
     <div class="px-4 py-2">

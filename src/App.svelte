@@ -11,7 +11,7 @@
   <main class="grid-main pb-8 flex justify-center">
     <Router>
       <Route exact path="/" component={Home} />
-      <Route exact path="/detail" component={Detail} />
+      <Route exact path="/detail/:id" component={Detail} />
     </Router>
   </main>
   <AppFooter footerTitle="@Tiago Mota // SvelDex"/>
