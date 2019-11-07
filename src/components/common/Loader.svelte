@@ -1,4 +1,4 @@
-<div class="h-full w-full fixed bg-loader flex justify-center items-center">
+<div class="h-full w-full fixed bg-loader flex justify-center items-center top-0 left-0">
   <div class="pokeball">
     <div class="pokeball-center"></div>
   </div>

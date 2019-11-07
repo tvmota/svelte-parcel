@@ -8,7 +8,7 @@
 </span>
 
 <style>
-  .normal {
+ .normal {
     background-color: #A8A878
   }
 
@@ -45,11 +45,11 @@
   }
 
   .psychic {
-    background-color: #F85888;
+    background-color: #F85888
   }
 
   .rock {
-    background-color: rgb(54, 54, 54)
+    background-color: #B8A038
   }
 
   .ice {
