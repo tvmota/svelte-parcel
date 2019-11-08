@@ -14,7 +14,7 @@
   <div class="w-full pb-4 bg-red-300 border border-red-300">
     <div class="px-4 py-2">
       <div class="font-bold text-xl text-gray-900 capitalize">
-        <Link href={`/detail/${pkmnObj.id}`} className="hover:underline text-red-800">
+        <Link href={`/detail/${pkmnObj.id}`} className="hover:underline hover:text-red-800 text-red-600">
           {`#${pkmnObj.id} ${pkmnObj.name}`}
         </Link>
       </div>
