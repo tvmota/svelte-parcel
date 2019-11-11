@@ -2,7 +2,7 @@
   import * as icons from '../../assets/icons/*.svg';
   export let iconName;
   export let size
-  export let color
+  export let color = '';
 </script>
 
 <svg class="{`${size} ${color} fill-current`}">
