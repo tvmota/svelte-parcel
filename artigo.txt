@@ -6,21 +6,23 @@
   explicação do que vai ser construido e o que será utilizado no desenvolvimento da aplicação e como será a estrtura da aplicação
     Processo de escolha das ferramentas utilizadas
       - pros e contras
-  Estrtura do projeto
-    Será uma aplicação SPA(Single Page App) com duas rotas: 
-      - Home(página inicial)
-      - Details(página de detalhes)
 
 - CONFIGURAÇÃO INICIAL
   Explanção sobre os requisitos básicos e como configurar o ambiente de desenvolvimento
 
-- LAYOUT
-  Definir layout básico da aplicação, vou optar pelo uso do css grid layout, apesar de não ter a mesma abrangencia de suporte do flexbox, 
-  por outro lado traz mais simplicidade para construir o layout inicial. O layout da aplicação será simples:
-    - Header
-    - body
-    - footer
-  
+- ESTRUTURA DO PROJETO
+    Será uma aplicação SPA(Single Page App) com duas rotas: 
+      - Home(página inicial)
+        - LAYOUT
+        Definir layout básico da aplicação, vou optar pelo uso do css grid layout, apesar de não ter a mesma abrangencia de suporte do flexbox, 
+        por outro lado traz mais simplicidade para construir o layout inicial. O layout da aplicação será simples:
+          - Header
+          - body
+          - footer
+        - search
+        - grid com list de pokemon
+      - Details(página de detalhes)
+        - Info pokemon
 
 - APLICAÇÂO
   Baseado nos requisitos da aplicação vamos definir quais componentes precisamos para construir a aplicação e explicação e desenvolvimento dos componentes
@@ -36,5 +38,6 @@
   Considerações finais e conclusão do artigo
 
 Referencias
+  loader(geral) https://code.sololearn.com/W8Wydo5pM84d/#html
   loader(evolution_list): https://css.30secondsofcode.org/snippet/bouncing-loader
   icons: <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons-freebies" title="Roundicons Freebies">Roundicons Freebies</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
