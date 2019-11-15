@@ -10,7 +10,7 @@
     <div>
       <img
         alt={pkmnObj.name}
-        class="w-56 xl:w-64 lg:w-64 md:w-48 h-56 xl:h-64 lg:h-64 md:h-56"
+        class="w-56 xl:w-64 lg:w-56 md:w-48 h-56 xl:h-64 lg:h-48 md:h-48"
         src={pkmnObj.sprites.front_default}>
     </div>
     <div class="w-full pb-4 bg-red-300 border border-red-300">

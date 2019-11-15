@@ -1,6 +1,7 @@
 <script>
   import { getPkmn } from '../../services/PokeService';
   import Icon from '../common/Icon.svelte';
+  import Error from  '../common/Error.svelte';
 
   export let evolutionList;
   export let pkmnId;
@@ -38,6 +39,8 @@
         </div>
       {/each}
     </div>
+  {:catch err}
+    <Error msg="Não foi possivel oter as evoluções"/>
   {/await}
 </div>
 
