@@ -3,6 +3,32 @@
 
 Projeto feito com base em outro projeto que fiz em angular [NgPokedex](https://github.com/tvmota/ng-pokedex) e também foi utilizado como objeto de estudos sobre o framework UI svelte para a escrita de um artigo sobre o mesmo.
 
+### Instruções para execução
+##### Instalação
+```bash
+$ git clone https://github.com/tvmota/svelte-parcel
+$ cd svelte-parcel
+#----------Execução_Com_NPM---------
+$ npm i
+#----------Execução_Com_YARN---------
+$ yarn
+```
+##### Execução
+```bash
+#----------Execução_Com_NPM---------
+$ npm run dev
+#----------Execução_Com_YARN---------
+$ yarn dev
+```
+##### Geração do build para deploy
+```bash
+$ cd eng-zap-challenge-javascript
+
+#----------Execução_Com_NPM---------
+$ npm run build
+#----------Execução_Com_YARN---------
+$ yarn build
+```
 
 ### Libs utilizadas
 
