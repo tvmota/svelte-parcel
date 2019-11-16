@@ -1,37 +1,44 @@
 <script>
+  import { beforeUpdate } from 'svelte';
+  import { fade } from 'svelte/transition'; 
   import { getPkmn } from '../../services/PokeService';
   import Icon from '../common/Icon.svelte';
   import Error from  '../common/Error.svelte';
 
   export let evolutionList;
   export let pkmnId;
-  let promise = getEvolutionInfo();
+  let stsList = false;
+  let list;
 
-  async function getEvolutionInfo() {
+  beforeUpdate(async () => {
     const resp = await Promise.all(evolutionList.map(pkmn => getPkmn(pkmn.name)));
-    return Promise.resolve(resp);
-  }
+    list = resp;
+  });
 </script>
-<div class=" w-full">
-  {#await promise}
-    <div class="bouncing-loader">
-      <div>
-        <Icon iconName="bullbasaur" size="md"/>
-      </div>
-      <div>
-        <Icon iconName="charmander" size="md"/>
-      </div>
-      <div>
-        <Icon iconName="squirtle" size="md"/>
-      </div>
+<div class="w-full">
+  {#if !list}
+    <div
+      class="bouncing-loader"
+      out:fade="{{ duration: 1500 }}"
+      on:outroend="{() => stsList = true}">
+        <div>
+          <Icon iconName="bullbasaur" size="md"/>
+        </div>
+        <div>
+          <Icon iconName="charmander" size="md"/>
+        </div>
+        <div>
+          <Icon iconName="squirtle" size="md"/>
+        </div>
     </div>
-  {:then resp}
-    <div class="flex justify-around">
-      {#each resp as item}
+  {/if}
+
+  {#if stsList && list.length > 0}
+    <div class="flex justify-around" in:fade="{{ delay: 200 }}">
+      {#each list as item}
         <div class="flex flex-col text-center px-1">
           <img
             alt={item.name}
-            class="w-24 md:w-32 lg:w-32 xl:w-32 h-24 md:h-32 lg:h-32 xl:h-32"
             src={item.sprites.front_default}>
           <h4 class="{`capitalize p-1 font-medium bg-red-300 rounded-sm ${pkmnId === item.id ? 'bg-red-600 text-white': ''}`}">
             {item.name}
@@ -39,9 +46,7 @@
         </div>
       {/each}
     </div>
-  {:catch err}
-    <Error msg="Não foi possivel oter as evoluções"/>
-  {/await}
+  {/if}
 </div>
 
 <style>

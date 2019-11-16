@@ -33,6 +33,7 @@
     - img(wrapper)
     - badge
     - evolution list
+      -Explicar transações svelte
 
 - FINALIZAÇÂO
   Considerações finais e conclusão do artigo
