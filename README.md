@@ -22,8 +22,6 @@ $ yarn dev
 ```
 ##### Geração do build para deploy
 ```bash
-$ cd eng-zap-challenge-javascript
-
 #----------Execução_Com_NPM---------
 $ npm run build
 #----------Execução_Com_YARN---------
