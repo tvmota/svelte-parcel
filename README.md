@@ -30,6 +30,9 @@ $ yarn build
 
 ### Libs utilizadas
 
+- **Framework UI**: [Svelte](https://svelte.dev/)
+Framework UI para construção da aplicação, que tem como vantagem principal compilar os componentes svelte em JS puro.
+
 - **Toolkit CSS**: [Tailwind](https://tailwindcss.com/)
 Biblioteca utilitária que prove classes básicas para construções de componentes, assim trabalhando muito bem com frameworks UI(angular, react, vue, etc)
 

@@ -3,16 +3,16 @@
   </script>
 
   <footer class="grid-footer text-right text-white bg-black p-3 flex justify-between" role="contentinfo">
-    <div class="flex items-center">
+    <div class="flex items-center w-6/12">
       <a
-        class="text-xl font-semibold hover:underline hover:text-red-500 align-middle"
+        class="text-sm xs:text-sm  sm:text-sm md:text-lg lg:text-xl xl:text-xl font-semibold hover:underline hover:text-red-500 align-middle"
         href="https://github.com/tvmota/svelte-parcel"
         target="blank"
         title={footerTitle}>
           { footerTitle }
       </a>
     </div>
-    <div class="text-sm font-semibold">
+    <div class="text-xs sm:text-sm md:text-sm lg:text-sm xl:text-md font-semibold w-6/12">
       <p>
         Icons made by:
         <a

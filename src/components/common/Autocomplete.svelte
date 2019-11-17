@@ -48,7 +48,7 @@
         bind:value={search}
         on:blur={hideResultBlur}
         on:keyup={clear}
-        class="h-full shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight outline-none focus:border-red-500"
+        class="h-full shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight outline-none text-xs sm:text-sm md:text-lg lg:text-lg xl:text-lg focus:border-red-500"
         id="username"
         placeholder="Inserir num ou nome completo do pokemon e pressionar enter"
         type="text">
