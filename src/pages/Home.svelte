@@ -34,7 +34,7 @@
     {#await promise} 
       <Loader />
     {:then pkmns}
-      {#each pkmns as pkmn}
+      {#each pkmns as pkmn (pkmn.id)}
         <div class="w-full sm:w-full md:w-4/12 lg:w-4/12 xl:w-4/12 mb-6 px-2">
           <Card pkmnObj={pkmn}/>
         </div>
