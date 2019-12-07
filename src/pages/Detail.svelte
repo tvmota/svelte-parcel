@@ -3,6 +3,7 @@
   import EvolutionList from '../components/custom/EvolutionList';
   import Loader from '../components/common/Loader.svelte';
   import Badge from '../components/common/Badge.svelte';
+  import Error from '../components/common/Error.svelte';
 
   export let router = {};
   const patt = new RegExp(/\d{1,}(?!\d|.*\d{1,})/g);
@@ -66,7 +67,7 @@
       </div>
     </div>
   {:catch error}
-	  <p style="color: red">{error.message}</p>
+	  <Error msg="Erro ao obter os dados"/>
   {/await}
 </div>
 

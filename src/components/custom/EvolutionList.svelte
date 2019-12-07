@@ -1,5 +1,5 @@
 <script>
-  import { beforeUpdate } from 'svelte';
+  import { onMount } from 'svelte';
   import { fade } from 'svelte/transition'; 
   import { getPkmn } from '../../services/PokeService';
   import Icon from '../common/Icon.svelte';
@@ -10,7 +10,7 @@
   let stsList = false;
   let list;
 
-  beforeUpdate(async () => {
+  onMount(async () => {
     const resp = await Promise.all(evolutionList.map(pkmn => getPkmn(pkmn.name)));
     list = resp;
   });

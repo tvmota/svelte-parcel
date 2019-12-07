@@ -1,7 +1,7 @@
 <script>
   import { getPkmn } from '../services/PokeService';
   import Card from '../components/common/Card.svelte';
-  import Autocomplete from '../components/common/Autocomplete.svelte';
+  import Search from '../components/common/Search.svelte';
   import Loader from '../components/common/Loader.svelte';
   import Error from '../components/common/Error.svelte';
 
@@ -28,13 +28,13 @@
 
 <div class="h-full w-full flex flex-wrap">
   <div class="h-12 w-full flex flex-wrap mb-8 px-3">
-    <Autocomplete searchApi={getPkmn}/>
+    <Search searchApi={getPkmn}/>
   </div>
   <div class="h-full flex flex-wrap px-2 w-full">
     {#await promise} 
       <Loader />
     {:then pkmns}
-      {#each pkmns as pkmn}
+      {#each pkmns as pkmn (pkmn.id)}
         <div class="w-full sm:w-full md:w-4/12 lg:w-4/12 xl:w-4/12 mb-6 px-2">
           <Card pkmnObj={pkmn}/>
         </div>
