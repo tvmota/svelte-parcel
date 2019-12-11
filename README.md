@@ -1,4 +1,5 @@
 # [Sveldex](https://sveldex.netlify.com/) 🤷‍♂
+![alt text](src/assets/img/pwa_logo.png)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c8c1e3ac-725b-45df-bb6d-8071970a3f42/deploy-status)](https://app.netlify.com/sites/sveldex/deploys)
 
 Projeto feito com base em outro projeto que fiz em angular [NgPokedex](https://github.com/tvmota/ng-pokedex) e também foi utilizado como objeto de estudos sobre o framework UI svelte para a escrita de um artigo sobre o mesmo.
