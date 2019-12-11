@@ -33,10 +33,11 @@
     "name": "Svelte Pokedex",
     "shortName": "SvelDex",
     "startUrl": "/",
-    "theme": "#e53e3e",
+    "backgroundColor": "#f56565",
+    "themeColor": "#e53e3e",
     "orientation": "portrait-primary",
     "generateIconOptions": {
-      "baseIcon": "./src/assets/icons/pkmn.svg",
+      "baseIcon": "./src/assets/icons/app.svg",
       "formats": {
         "png": true
       },
