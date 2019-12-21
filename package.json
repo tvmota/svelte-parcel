@@ -48,7 +48,7 @@
         384,
         512
       ],
-      "genFavicons": true
+      "genFavicons": false
     }
   }
 }
