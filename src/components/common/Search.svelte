@@ -1,5 +1,5 @@
 <script>
-  import { Link } from 'svero';
+  import {link} from 'svelte-spa-router'
 
   export let searchApi;
   let resultsVisible = 'invisible';
@@ -57,7 +57,7 @@
     <div class={`${resultsVisible} absolute border z-10 right-0 left-0 bg-white flex flex-col shadow-lg mt-1`}> 
       {#if results.length > 0}
         {#each results as result}
-          <Link className="flex hover:bg-red-200" href={`/detail/${result.id}`}>
+          <a class="flex hover:bg-red-200" href={`/detail/${result.id}`} use:link>
             <img
               alt={result.name}
               class="w-24 h-24"
@@ -65,7 +65,7 @@
             <h2 class="capitalize flex items-center font-semibold text-lg">
               {`#${result.id} ${result.name}`}
             </h2>
-          </Link>
+          </a>
         {/each}
       {:else}
         <h4 class="font-semibold text-lg text-center">Sem resultados</h4>
