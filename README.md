@@ -37,7 +37,7 @@ Framework UI para construção da aplicação, que tem como vantagem principal c
 - **Toolkit CSS**: [Tailwind](https://tailwindcss.com/)
 Biblioteca utilitária que prove classes básicas para construções de componentes, assim trabalhando muito bem com frameworks UI(angular, react, vue, etc)
 
-- **Roteamento**: [Svero](https://github.com/kazzkiq/svero)
+- **Roteamento**: [Svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router)
 Biblioteca para utilização de rotas com o sveltejs  
 
 - **Empacotador(Module Bundler)**: [Parcel](https://parceljs.org/)

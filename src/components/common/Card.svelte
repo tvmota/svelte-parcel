@@ -1,12 +1,13 @@
 <script>
-  import { Link } from 'svero';
+  import {link} from 'svelte-spa-router'
   import Badge from './Badge.svelte';
   export let pkmnObj;
 </script>
 
-<Link
-  className="w-full rounded overflow-hidden shadow-xl flex flex-col flex-wrap items-center cursor-pointer border border-red-500"
-  href={`/detail/${pkmnObj.id}`}>
+<a
+  class="w-full rounded overflow-hidden shadow-xl flex flex-col flex-wrap items-center cursor-pointer border border-red-500"
+  href={`/detail/${pkmnObj.id}`}
+  use:link>
     <div>
       <img
         alt={pkmnObj.name}
@@ -16,9 +17,9 @@
     <div class="w-full pb-4 bg-red-300 border border-red-300">
       <div class="px-4 py-2">
         <div class="font-bold text-xl text-gray-900 capitalize">
-          <Link href={`/detail/${pkmnObj.id}`} className="hover:underline hover:text-red-800 text-red-600">
+          <a href={`/detail/${pkmnObj.id}`} class="hover:underline hover:text-red-800 text-red-600" use:link>
             {`#${pkmnObj.id} ${pkmnObj.name}`}
-          </Link>
+          </a>
         </div>
       </div>
       <div class="px-4 py-2">
@@ -29,4 +30,4 @@
         {/each}
       </div>
     </div>
-</Link>
+</a>

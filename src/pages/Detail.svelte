@@ -5,7 +5,7 @@
   import Badge from '../components/common/Badge.svelte';
   import Error from '../components/common/Error.svelte';
 
-  export let router = {};
+  export let params = {}
   const patt = new RegExp(/\d{1,}(?!\d|.*\d{1,})/g);
   let promise = pkmnInfo();
   let evolutionList;
@@ -14,7 +14,7 @@
   
 
   async function pkmnInfo() {
-    const resp = await Promise.all([getPkmn(router.params.id), getSpecies(router.params.id)]);
+    const resp = await Promise.all([getPkmn(params.id), getSpecies(params.id)]);
     idEvolution = patt.exec(resp[1].evolution_chain.url);
     description = getDescription(resp[1]);
     evolutionList = await getEvolutions(idEvolution[0]);
