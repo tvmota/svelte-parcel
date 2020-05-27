@@ -21,26 +21,31 @@
     pkmnList.forEach(num =>
       pkmnhttp.push(getPkmn(num))
     );
-
     return Promise.all(pkmnhttp)
   }
 </script>
 
 <div class="h-full w-full flex flex-wrap">
-  <div class="h-12 w-full flex flex-wrap mb-8 px-3">
-    <Search searchApi={getPkmn}/>
-  </div>
-  <div class="h-full flex flex-wrap px-2 w-full">
-    {#await promise} 
-      <Loader />
-    {:then pkmns}
+ {#await promise} 
+    <Loader />
+  {:then pkmns}
+    <div class="h-12 w-full flex flex-wrap mb-8 px-3">
+      <Search searchApi={getPkmn}/>
+    </div>
+    <div class="h-full flex flex-wrap px-2 w-full">
       {#each pkmns as pkmn (pkmn.id)}
         <div class="w-full sm:w-full md:w-4/12 lg:w-4/12 xl:w-4/12 mb-6 px-2">
           <Card pkmnObj={pkmn}/>
         </div>
       {/each}
-    {:catch error}
-      <Error msg="Erro ao obter os dados"/>
-    {/await}
-  </div>
+    </div>
+  {:catch error}
+    <Error msg="Erro ao obter os dados"/>
+  {/await}
 </div>
+
+<style>
+.loadable-container {
+  width: 100%;
+}
+</style>
