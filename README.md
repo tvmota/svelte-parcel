@@ -1,4 +1,4 @@
-# [Sveldex](https://sveldex.netlify.com/) 🤷‍♂
+# ![alt text](src/assets/img/readme_icon.png) [Sveldex](https://sveldex.netlify.com/) 
 ![alt text](src/assets/img/pwa_logo.png)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c8c1e3ac-725b-45df-bb6d-8071970a3f42/deploy-status)](https://app.netlify.com/sites/sveldex/deploys)
 
