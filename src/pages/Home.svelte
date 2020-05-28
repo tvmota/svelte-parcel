@@ -26,7 +26,7 @@
 </script>
 
 <div class="h-full w-full flex flex-wrap">
- {#await promise} 
+  {#await promise} 
     <Loader />
   {:then pkmns}
     <div class="h-12 w-full flex flex-wrap mb-8 px-3">

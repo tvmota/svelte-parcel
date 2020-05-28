@@ -1,12 +1,11 @@
 <script>
-  import * as icons from '../../assets/icons/*.svg';
   export let iconName;
   export let size
   export let color = '';
 </script>
 
 <svg class="{`${size} ${color} fill-current`}">
-  <use xlink:href={icons[iconName]}/>
+  <use xlink:href="#{`${iconName}`}"/>
 </svg>
 
 <style>
