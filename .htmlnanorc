@@ -1,0 +1,12 @@
+{
+  minifySvg: {
+    plugins: [ 
+      {
+        cleanupIDs: false,
+        removeUselessDefs: false,
+        removeHiddenElems: false,
+        removeEmptyContainers: false,
+      }
+    ]
+  }
+}

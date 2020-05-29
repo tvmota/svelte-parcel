@@ -23,6 +23,7 @@
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-pwa-manifest": "^3.0.7",
     "parcel-plugin-svelte": "^4.0.5",
+    "posthtml": "^0.13.0",
     "svelte": "^3.16.0",
     "tailwindcss": "^1.1.4"
   },
@@ -51,5 +52,11 @@
       ],
       "genFavicons": false
     }
+  },
+  "sw": {
+    "fileName": "sw.js",
+    "swSrc": "./src/sw.js",
+    "minify": true,
+    "cacheId": "sveldex-cache"
   }
 }
