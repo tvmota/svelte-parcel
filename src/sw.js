@@ -4,7 +4,11 @@ const assets = [
   '/index.html',
   '/main.af46ece4.css',
   '/main.1f19ae8e.css',
+  'Detail.432d1ea4.css',
+  'Home.9a4dface.css',
   '/main.1f19ae8e.js',
+  'Home.9a4dface.js',
+  'Detail.432d1ea4.js',
 ];// install event
 self.addEventListener('install', evt => {
   evt.waitUntil(

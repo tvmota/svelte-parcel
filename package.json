@@ -55,7 +55,7 @@
   },
   "sw": {
     "fileName": "sw.js",
-    "swSrc": "./src/sw.js",
+    "swSrc": "/sw.js",
     "minify": true,
     "cacheId": "sveldex-cache"
   }
